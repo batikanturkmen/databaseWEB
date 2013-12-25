@@ -1,1 +1,1 @@
-<img src="logo.png" alt="Smiley face">
+<img src="logo.png" alt="BilkentCargoLogo">

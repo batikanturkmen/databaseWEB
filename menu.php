@@ -20,7 +20,7 @@
       <li><a href="ucuncu.php">Ucuncu Sayfa</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Logout Gelcek</a></li>
+      <li><a href="#">Logout</a></li>
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>

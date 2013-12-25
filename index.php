@@ -1,8 +1,14 @@
+<!DOCTYPE html> 
 <html>
 <head>
 
     <title>Cargo Company Web</title>
+    <div id = "container" style = "width:100%">
     <?php include("logo.php") ?>
+
+	 	<div id = "middle" style = "float:right; width: 25%;">
+<?php include("loginMain.php") ?>
+ 	</div>
     <link rel="stylesheet" href="css/style.css"/>
     <script class="include" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/unslider.min.js"></script>
@@ -23,7 +29,6 @@
 	<?php include("menu.php") ?>
 
 	<style media="screen" type="text/css">
-
 
 	</style>
 
@@ -84,7 +89,7 @@
 					$('html, body').animate({
 						scrollTop: pos.top,
 						scrollLeft: pos.left
-					}, 1000);
+					}, 3000);
 				}
 				
 				//  Don't let them visit the url, we'll scroll you there
