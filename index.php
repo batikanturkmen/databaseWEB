@@ -1,10 +1,8 @@
-<!--http://www.itechroom.com-->
-<!DOCTYPE html>
-
 <html>
 <head>
 
-    <title>A simple jQuery Slider - Unslider</title>
+    <title>Cargo Company Web</title>
+    <?php include("logo.php") ?>
     <link rel="stylesheet" href="css/style.css"/>
     <script class="include" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/unslider.min.js"></script>
@@ -19,15 +17,24 @@
 		fluid: false              //  Support responsive design. May break non-responsive designs
 	});
 	</script>
-	
-	
+
 </head>
 <body>
-    <div style="width:900px; margin:0 auto;">
-    
-    <h2>Cargo Company</h2>
-	<br>
+	<?php include("menu.php") ?>
 
+	<style media="screen" type="text/css">
+
+
+	</style>
+
+
+	<div id = "container" style = "width:100%">
+	<div id ="left" style = "float:left; width: 55%;">
+
+    <!-- <div style="width:900px; margin:0 auto;"> -->
+    
+    
+	<br>
 	<div class="banner">
 			<ul>
 				<li style="background-image: url('images/Mount_Everest.jpg');">
@@ -82,14 +89,11 @@
 				
 				//  Don't let them visit the url, we'll scroll you there
 				return false;
-			});
-			
+			});			
 		</script>
-
-	   
+ 	</div>  
+ 	<div id = "middle" style = "float:right; width: 40%;">
+ 		<?php include("test.php") ?>
  	</div>
-   
 </body>
-
-
 </html>
