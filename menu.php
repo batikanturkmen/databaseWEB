@@ -1,4 +1,4 @@
-<?php include("bootstrap.php") ?>
+<?php require_once "inc.php"; ?>
 
 <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
