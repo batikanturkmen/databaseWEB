@@ -10,7 +10,7 @@
 
 <div class="tab-content">
     <div class="tab-pane active" id="personal-info">
-      <body bgcolor="#FFFFFF">ghjkgh
+      <?php include("calculate.php") ?>
     </body>
     </div>
 
