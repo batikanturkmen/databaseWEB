@@ -4,8 +4,8 @@
 <br>
 <br>
 <ul class="nav nav-tabs" id="rowTab">
-    <li class="active"><a href="#personal-info" data-toggle="tab">Personal Information</a></li>
-    <li><a href="#Employment-info" data-toggle="tab">Employment Information</a></li>
+    <li class="active"><a href="#personal-info" data-toggle="tab">Calculate Price</a></li>
+    <li><a href="#Employment-info" data-toggle="tab">Track Cargo</a></li>
 </ul>
 
 <div class="tab-content">
@@ -15,15 +15,10 @@
     </div>
 
     <div class="tab-pane" id="Employment-info">
-        tab 2...
+        <?php include("trackcargo.php") ?>
     </div>
 
 </div>
-
-
-
-
-
 
 
 <!--

@@ -126,7 +126,7 @@ include("bootstrap.php");
                     </div>  
                     <div id = "middle" style = "float:right; width: 40%;">
                             <div id = "container" style = "float:left; width:85%">
-                                    <?php include("test.php") ?>
+                                    <?php include("dynamicmenu.php") ?>
                             </div>  
                     </div>
             </div>
