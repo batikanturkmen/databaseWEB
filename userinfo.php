@@ -17,7 +17,7 @@ $result =  mysql_query("SELECT staff_name, staff_surname FROM staff where staff_
                                 } else {
                                     echo 'Welcome ';
                                     echo mysql_result($result, 0, 'staff_name').' '; 
-                                    echo mysql_result($result, 0, 'staff_surname').'<br>Enjoy'; 
+                                    echo mysql_result($result, 0, 'staff_surname'); 
                                 }
 
             ?>
