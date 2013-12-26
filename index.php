@@ -1,4 +1,8 @@
+<?php 
+    require_once "inc.php"; 
+?>
 <!DOCTYPE html> 
+
 <html>
 <head>
 
@@ -7,7 +11,14 @@
     <?php include("logo.php") ?>
 
 	 	<div id = "middle" style = "float:right; width: 25%;">
-<?php include("loginMain.php") ?>
+<?php 
+    if(!$_SESSION['login']) 
+        include("loginMain.php");
+    else{
+        echo '<br>';
+        include("userinfo.php");
+    }
+?>
  	</div>
     <link rel="stylesheet" href="css/style.css"/>
     <script class="include" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -29,11 +40,26 @@
 	<?php include("menu.php") ?>
 
 	<style media="screen" type="text/css">
+.navbar-custom {
+    background-color:#229922;
+    color:#ffffff;
+    border-radius:0;
+}
 
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
 	</style>
 
 
-	<div id = "container" style = "width:100%">
+	<div id = "container" style = "float:right; width:95%">
 	<div id ="left" style = "float:left; width: 55%;">
 
     <!-- <div style="width:900px; margin:0 auto;"> -->
@@ -97,8 +123,11 @@
 			});			
 		</script>
  	</div>  
- 	<div id = "middle" style = "float:right; width: 40%;">
+ 	<div id = "middle" style = "float:left; width: 30%;">
  		<?php include("test.php") ?>
+ 	</div>
+        <div id = "middle" style = "float:right; width: 10%;">
+ 		
  	</div>
 </body>
 </html>

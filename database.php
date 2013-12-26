@@ -9,7 +9,7 @@ $databaseConfig = Array(
 
 $mysql = mysql_connect($databaseConfig["server"],$databaseConfig["user"],$databaseConfig["pass"]) or die("DB CONNECTION ERROR.");
 mysql_select_db($databaseConfig["db"], $mysql) or die("SELECT DATABASE ERROR.") or die(mysql_error());
-
+/*
 $tbl_name="customer";
 $sql="SELECT * FROM $tbl_name";
 $result=mysql_query($sql);
@@ -29,4 +29,4 @@ while($row = mysql_fetch_array($result, MYSQL_ASSOC))
  echo "-" . $row['customer_email'] . "<br>";
  echo "<br>";
  
-} 
+} */
