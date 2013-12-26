@@ -1,4 +1,6 @@
-<?php include("bootstrap.php") ?>
+<?php require_once "inc.php"; 
+include("bootstrap.php");
+ ?>
 
 <? if(!$_SESSION['login']){ ?>
      <nav class="navbar navbar-default" role="navigation">
