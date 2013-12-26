@@ -12,7 +12,8 @@ if (isset($_SESSION)) {
     }   
 }
 else{
-    echo "olmadı";
+    echo "olmadi yaaaaaaaaaaaar";
+    echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php">'; 
 }
        
                 
