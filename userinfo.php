@@ -19,6 +19,7 @@ $result =  mysql_query("SELECT staff_name, staff_surname FROM staff where staff_
                                 }
 
             ?>
+            <a href="logout.php">Logout </a>
         </div>
     </div>
 </div>
