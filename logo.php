@@ -1,1 +1,1 @@
-<img src="logo.png" alt="BilkentCargoLogo">
+<img src="images/logo.png" alt="BilkentCargoLogo">

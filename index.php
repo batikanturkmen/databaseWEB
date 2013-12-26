@@ -1,4 +1,6 @@
-<?php require_once "inc.php"; ?>
+<?php require_once "inc.php"; 
+include("bootstrap.php");
+?>
 
 <!DOCTYPE html> 
 
