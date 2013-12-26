@@ -6,7 +6,8 @@ $query = "select * from city";
 $result=  mysql_query($query);
 echo	"<form action='index.php' method='GET'>";
 
-// from  city
+echo "<br>";
+
 echo "<select name='fromCityID'>";
 
 
@@ -23,7 +24,7 @@ while ($row = mysql_fetch_array($result)){
 	
 }
 echo "</select><br/>";
-
+echo "<br>";
 // to CÝTY
 echo	"<select name='toCityID'>";
 
@@ -40,23 +41,22 @@ while ($row = mysql_fetch_array($result)){
 }
 
 echo "</select><br>";
-
-echo "Size: ";
 ?>
-
+  <br>
 <div class="input-group">
+	<span class="input-group-addon">Size</span>
   <input type="text" name='width' class="form-control" placeholder="Width" style="width:70px">
   <span class="glyphicon glyphicon-remove"></span>  
   <input type="text" name='height' class="form-control" placeholder="Height" style="width:70px">
   <span class="glyphicon glyphicon-remove"></span> 
   <input type="text" name='depth' class="form-control" placeholder="Depth" style="width:70px">
-
 </div>
-Weight:
-
+  <br>
+<div class="input-group">
+ <span class="input-group-addon">Weight</span>
 <input type="text" name='weight' class="form-control" placeholder="Kilogram" style="width:90px">
+</div>
 <button type="submit" value = "Calculate" class="btn btn-default navbar-btn">Calculate</button>
-
 <?php             
 echo "</form>";
 
