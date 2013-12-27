@@ -1,3 +1,34 @@
+<?php require_once "inc.php"; 
+include("bootstrap.php");
+?>
+
+<!DOCTYPE html> 
+
+<html>
+    <head>
+            <title>Cargo Company Web</title>
+            <div id = "container" style = "width:100%">
+                    <?php include("logo.php") ?>
+
+                    <div id = "middle" style = "float:right; width: 25%;">
+                            <?php 
+                                if(!$_SESSION['login']) 
+                                    include("loginMain.php");
+                                else{
+                                    echo '<br>';
+                                    include("userinfo.php");
+                                }
+                            ?>
+                    </div>
+            </div>
+
+
+            <?php include("menu.php") ?>
+
+
+
+
+
 <?php
 if ( strpos($_SERVER['HTTP_USER_AGENT'], 'Gecko') )
 {
@@ -38,7 +69,12 @@ $ip = $_SERVER['REMOTE_ADDR'];
  
 $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
  
-echo "Hello Visitor, here is your Info:<br><br>";
+?>
+<div class="jumbotron">
+  <p>
+
+<?php
+echo "Info for your current system<br><br>";
  
 echo "You are using: " . $browser . "<br>";
  
@@ -49,6 +85,7 @@ echo "Your Hostname is: " . $hostname;
 ?>
 
 <?php
+echo "<br>";
 function getip() {
 if (isSet($_SERVER)) {
 if (isSet($_SERVER["HTTP_X_FORWARDED_FOR"])) {
@@ -71,7 +108,18 @@ return $realip;
 }
 
 //print out the ip and browser information
-
+echo "<br>";
 print getip();
 print $_SERVER['HTTP_USER_AGENT']; 
+echo "<br>";
+$newhostname = gethostname();
+echo $newhostname;
+
+echo "<br>";
+$providerinfo = gethostbyaddr($_SERVER['REMOTE_ADDR']);  
+echo $providerinfo;
+
 ?>
+
+</p>
+</div>
