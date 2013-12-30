@@ -2,7 +2,7 @@
 include("bootstrap.php");
  ?>
 
-<? if(!$_SESSION['login']){ ?>
+<? if(!$_SESSION['login'] || (($_SESSION['login'] && $_SESSION['level'] != 4) && ($_SESSION['login'] && $_SESSION['level'] != 5))){ ?>
      <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
@@ -25,7 +25,7 @@ include("bootstrap.php");
   </div><!-- /.navbar-collapse -->
 </nav>
 <? } ?>
-<? if($_SESSION['login'] && $_SESSION['level'] == 3){ ?>
+<? if($_SESSION['login'] && $_SESSION['level'] == 4){ ?>
      <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">

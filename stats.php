@@ -26,9 +26,6 @@ include("bootstrap.php");
             <?php include("menu.php") ?>
 
 
-
-
-
 <?php
 if ( strpos($_SERVER['HTTP_USER_AGENT'], 'Gecko') )
 {

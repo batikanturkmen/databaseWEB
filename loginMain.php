@@ -29,7 +29,7 @@
         </form>
     </div> 
     <p align="center">
-<a href="register.php" >Register</a>
+<a href="cust_register.php" >Register</a>
 &nbsp
 &nbsp
     <a href="resetpassword.php"> Forgot Password</a>

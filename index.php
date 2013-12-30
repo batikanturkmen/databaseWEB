@@ -79,7 +79,7 @@ include("bootstrap.php");
 
                                             <li style="background-image: url('images/Lumbini_Birthplace_of_Buddha.jpg');">
                                                     <div>
-                                                    <h1>Hakan is the King</h1>
+                                                    <h1>Hakan Hoca Rocks</h1>
                                                     </div>
                                             </li>
                                     </ul>

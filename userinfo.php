@@ -12,7 +12,6 @@ if (isset($_SESSION)) {
     }   
 }
 else{
-    echo "olmadi yaaaaaaaaaaaar";
     echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php">'; 
 }
        
