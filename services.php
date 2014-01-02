@@ -6,6 +6,8 @@ include("bootstrap.php");
 
 <html>
     <head>
+        <meta charset="UTF-8">
+
             <title>Cargo Company Web</title>
             <div id = "container" style = "width:100%">
                     <?php include("logo.php") ?>

@@ -32,8 +32,8 @@ include("bootstrap.php");
     <div class="thumbnail">
       <img src="images/cargo1.jpeg" alt="Resim Bilgisi">
       <div class="caption">
-        <h3>Hebelek Discount</h3>
-        <p>Buraya Hep Kampanya Aciklamalri gelecek</p>
+        <h3>Black Friday Discount</h3>
+        <p>In black friday you can send your cargos with half price</p>
       </div>
     </div>
   </div>
@@ -41,8 +41,8 @@ include("bootstrap.php");
     <div class="thumbnail">
       <img src="images/cargo2.jpg" alt="Resim Bilgisi">
       <div class="caption">
-        <h3>Special %50 discount for presentation</h3>
-        <p>Buraya Hep Kampanya Aciklamalri gelecek</p>
+        <h3>Special 50% discount for presentation</h3>
+        <p>For today you can send your cargo with half price</p>
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@ include("bootstrap.php");
       <img src="images/cargo3.jpg" alt="Resim Bilgisi">
       <div class="caption">
         <h3>30% Discount for Bilkenters</h3>
-        <p>If your a current Bilkent Alumini ......</p>
+        <p>If your a current Bilkent Alumini you can send cargo with 30% discountp>
       </div>
     </div>
   </div>
